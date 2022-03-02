@@ -10,6 +10,8 @@ public class CreateTopicMsg extends Message {
 	// Constructor, get/set-methods, and toString method
     // as described in the project text
 
+    //can remove ^
+
     public CreateTopicMsg (String user, String topic) {
         super(MessageType.CREATETOPIC, user);
         this.topic = topic;
