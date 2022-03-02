@@ -36,4 +36,6 @@ public class CreateTopicMsg extends Message {
     public String toString() {
         return "Message [type=" + getType() + ", user=" + getUser() + ", topic=" + topic +"]";
     };
+
+    public void test(){}
 }
