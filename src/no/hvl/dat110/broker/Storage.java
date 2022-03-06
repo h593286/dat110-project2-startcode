@@ -91,9 +91,11 @@ public class Storage {
 	public void addSubscriber(String user, String topic) {
 
 		// TODO: add the user as subscriber to the topic
-		Set<String> subs = getSubscribers(topic);
-		subs.add(user);
-		subscriptions.put(topic,getSubscribers(topic));
+		if(subscriptions.containsKey(topic)) {
+			Set<String> subs = getSubscribers(topic);
+			subs.add(user);
+			subscriptions.put(topic, getSubscribers(topic));
+		}
 		
 	}
 

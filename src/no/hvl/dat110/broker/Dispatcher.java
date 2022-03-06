@@ -127,7 +127,6 @@ public class Dispatcher extends Stopable {
 
 		// TODO: subscribe user to the topic
 		// user and topic is contained in the subscribe message
-
 		storage.addSubscriber(msg.getUser(), msg.getTopic());
 
 	}
